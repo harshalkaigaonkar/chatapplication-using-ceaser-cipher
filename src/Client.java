@@ -1,6 +1,5 @@
 package chatApp;
 
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
@@ -23,7 +22,7 @@ public class Client {
         return result; 
     } 
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		Socket s = new Socket("localhost", 3002);
   
