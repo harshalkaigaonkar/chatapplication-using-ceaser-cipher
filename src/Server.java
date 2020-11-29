@@ -1,7 +1,6 @@
 package chatApp;
 import java.net.*;
 import java.io.*;
-//import java.util.*;
 
 
 public class Server {
@@ -27,7 +26,7 @@ public class Server {
         return result; 
     } 
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		
 		
 		try (ServerSocket ss = new ServerSocket(3002)) {
