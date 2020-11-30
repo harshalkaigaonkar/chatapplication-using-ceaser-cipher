@@ -15,7 +15,7 @@ public class Server {
         for (int i=0; i<l; i++) 
         { 
         	if(inputArray[i] != ' ') {
-        		int salt= ( 90 - s + 18 - 28) % 26;
+        		int salt= ( inputArray[i] - s + 97) % 26;
             	inputArray[i] += salt ;
             	outputArray[i] = inputArray[i];
         	} else {
