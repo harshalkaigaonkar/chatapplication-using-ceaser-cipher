@@ -14,7 +14,7 @@ public class Client {
 		
         for (int i=0; i<l; i++) 
         { 
-        		int salt = ( 90 - s + 18 - 28 ) % 26;
+        		int salt = ( inputArray[i] - s + 97 ) % 26;
             	inputArray[i] -= salt ;
             	outputArray[i] = inputArray[i];
         } 
